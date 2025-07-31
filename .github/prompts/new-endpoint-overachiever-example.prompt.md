@@ -4,7 +4,7 @@ tools: ['codebase', 'fetch', 'findTestFiles', 'openSimpleBrowser', 'problems', '
 ---
 
 
-You are tasked with documenting an implementation plan for a new API endpoint to retrieve weather data based on a provided city and state. **Do not make any code changes at this stage.**
+You are tasked with documenting an implementation plan for a new API endpoint to retrieve weather data based on a provided city and state. **Do not make any code changes at this stage. EXCEPT for markdown (*.md) files**
 
 In addition to the implementation plan, you must create a markdown file named `prd.md` with the requirements built out as user stories. This file will be used as context for agent mode. The `prd.md` should be clear, actionable, and suitable for sharing with the team.
 
