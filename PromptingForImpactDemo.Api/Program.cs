@@ -1,10 +1,16 @@
 using Scalar.AspNetCore;
 
+
+
+using PromptingForImpactDemo.Api;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddSingleton<IWeatherService, WeatherService>();
+
 
 var app = builder.Build();
 
@@ -15,7 +21,43 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
+
 app.UseHttpsRedirection();
+
+// Minimal API endpoint for /weather
+/// <summary>
+/// Weather endpoint: returns current weather for a given city and state.
+/// </summary>
+app.MapGet("/weather", (
+    string? city,
+    string? state,
+    bool? simulateError,
+    IWeatherService weatherService) =>
+{
+    // Validate input using helper
+    var validationError = WeatherValidation.ValidateCityState(city, state);
+    if (validationError is not null)
+    {
+        return Results.BadRequest(validationError);
+    }
+
+    try
+    {
+        var result = weatherService.GetWeather(city!.Trim(), state!.Trim(), simulateError ?? false);
+        if (result is null)
+        {
+            return Results.NotFound();
+        }
+        return Results.Ok(result);
+    }
+    catch (Exception ex)
+    {
+        // Log error (placeholder)
+        // logger?.LogError(ex, "Weather service failed");
+        return Results.Problem("An unexpected error occurred while retrieving weather data.", statusCode: 500);
+    }
+})
+.WithName("GetWeather");
 
 var summaries = new[]
 {
