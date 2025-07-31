@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e1b471a5-2ac5-474e-a366-719135cc3c9f" name="@lt-MacBook-Pro 2025-07-31 11:20:07" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-31T11:20:07.9637040-05:00" queuing="2025-07-31T11:20:07.9637040-05:00" start="2025-07-31T11:20:07.3913780-05:00" finish="2025-07-31T11:20:07.9657180-05:00" />
+  <TestSettings name="default" id="45054083-d0c7-48c8-aafc-5f7f7929aed7">
+    <Deployment runDeploymentRoot="_lt-MacBook-Pro_2025-07-31_11_20_07" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a5fe97b9-22b5-4f0f-9b85-4b1b992a590f" testId="3161f61d-21cf-6646-5266-8120f223a1e6" testName="GetWeatherByCityAndState_ValidInput_ReturnsWeatherForecast" computerName="lt-MacBook-Pro" duration="00:00:00.0072366" startTime="2025-07-31T11:20:07.9138980-05:00" endTime="2025-07-31T11:20:07.9138980-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5fe97b9-22b5-4f0f-9b85-4b1b992a590f" />
+    <UnitTestResult executionId="8046c34c-d4a1-406a-83da-ab542212f6bc" testId="314c43ec-cb8c-0f66-6bd9-af9b413bfaa5" testName="GetWeatherByCityAndState_EmptyInput_ReturnsBadRequest" computerName="lt-MacBook-Pro" duration="00:00:00.2187525" startTime="2025-07-31T11:20:07.9023130-05:00" endTime="2025-07-31T11:20:07.9023220-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8046c34c-d4a1-406a-83da-ab542212f6bc" />
+    <UnitTestResult executionId="c16f3665-4d2a-40b9-86d5-976fb5b7a073" testId="614169cc-cfc5-383a-a41c-b9eeaebf4fde" testName="GetWeatherByCityAndState_InvalidCharacters_ReturnsBadRequest" computerName="lt-MacBook-Pro" duration="00:00:00.0037914" startTime="2025-07-31T11:20:07.9065290-05:00" endTime="2025-07-31T11:20:07.9065290-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c16f3665-4d2a-40b9-86d5-976fb5b7a073" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GetWeatherByCityAndState_ValidInput_ReturnsWeatherForecast" storage="/users/probinson/repos/mine/demos/promptingforimpactdemo/promptingforimpactdemo.api.tests/bin/debug/net9.0/promptingforimpactdemo.api.tests.dll" id="3161f61d-21cf-6646-5266-8120f223a1e6">
+      <Execution id="a5fe97b9-22b5-4f0f-9b85-4b1b992a590f" />
+      <TestMethod codeBase="/Users/probinson/Repos/Mine/demos/PromptingForImpactDemo/PromptingForImpactDemo.Api.Tests/bin/Debug/net9.0/PromptingForImpactDemo.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PromptingForImpactDemo.Api.Tests.WeatherForecastEndpointTests" name="GetWeatherByCityAndState_ValidInput_ReturnsWeatherForecast" />
+    </UnitTest>
+    <UnitTest name="GetWeatherByCityAndState_EmptyInput_ReturnsBadRequest" storage="/users/probinson/repos/mine/demos/promptingforimpactdemo/promptingforimpactdemo.api.tests/bin/debug/net9.0/promptingforimpactdemo.api.tests.dll" id="314c43ec-cb8c-0f66-6bd9-af9b413bfaa5">
+      <Execution id="8046c34c-d4a1-406a-83da-ab542212f6bc" />
+      <TestMethod codeBase="/Users/probinson/Repos/Mine/demos/PromptingForImpactDemo/PromptingForImpactDemo.Api.Tests/bin/Debug/net9.0/PromptingForImpactDemo.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PromptingForImpactDemo.Api.Tests.WeatherForecastEndpointTests" name="GetWeatherByCityAndState_EmptyInput_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="GetWeatherByCityAndState_InvalidCharacters_ReturnsBadRequest" storage="/users/probinson/repos/mine/demos/promptingforimpactdemo/promptingforimpactdemo.api.tests/bin/debug/net9.0/promptingforimpactdemo.api.tests.dll" id="614169cc-cfc5-383a-a41c-b9eeaebf4fde">
+      <Execution id="c16f3665-4d2a-40b9-86d5-976fb5b7a073" />
+      <TestMethod codeBase="/Users/probinson/Repos/Mine/demos/PromptingForImpactDemo/PromptingForImpactDemo.Api.Tests/bin/Debug/net9.0/PromptingForImpactDemo.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PromptingForImpactDemo.Api.Tests.WeatherForecastEndpointTests" name="GetWeatherByCityAndState_InvalidCharacters_ReturnsBadRequest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="3161f61d-21cf-6646-5266-8120f223a1e6" executionId="a5fe97b9-22b5-4f0f-9b85-4b1b992a590f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="314c43ec-cb8c-0f66-6bd9-af9b413bfaa5" executionId="8046c34c-d4a1-406a-83da-ab542212f6bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="614169cc-cfc5-383a-a41c-b9eeaebf4fde" executionId="c16f3665-4d2a-40b9-86d5-976fb5b7a073" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.0)
+[xUnit.net 00:00:00.03]   Discovering: PromptingForImpactDemo.Api.Tests
+[xUnit.net 00:00:00.05]   Discovered:  PromptingForImpactDemo.Api.Tests
+[xUnit.net 00:00:00.05]   Starting:    PromptingForImpactDemo.Api.Tests
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+     Warning:
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+     A paid commercial license supports the development and continued increasing support of
+     Fluent Assertions users under both commercial and community licenses. Help us
+     keep Fluent Assertions at the forefront of unit testing.
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+[xUnit.net 00:00:00.30]   Finished:    PromptingForImpactDemo.Api.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
