@@ -22,6 +22,7 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
+
 app.MapGet("/weatherforecast", () =>
     {
         var forecast = Enumerable.Range(1, 5).Select(index =>
@@ -36,7 +37,29 @@ app.MapGet("/weatherforecast", () =>
     })
     .WithName("GetWeatherForecast");
 
+// Minimal API for weather by city/state
+app.MapGet("/weather", (string? state, string? city) =>
+{
+    if (string.IsNullOrWhiteSpace(state) || string.IsNullOrWhiteSpace(city))
+    {
+        return Results.BadRequest("Both state and city must be provided.");
+    }
+    var weather = new Dictionary<string, object>
+    {
+        { "state", state },
+        { "city", city },
+        { "temperatureC", 25 },
+        { "temperatureF", 77 },
+        { "summary", "Sunny" },
+        { "date", DateTime.UtcNow }
+    };
+    return Results.Ok(weather);
+})
+.WithName("GetWeatherByCityState");
+
 app.Run();
+
+public partial class Program { }
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
