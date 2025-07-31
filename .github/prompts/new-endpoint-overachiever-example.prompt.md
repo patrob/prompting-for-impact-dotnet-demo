@@ -3,7 +3,13 @@ description: "Sample reusable prompt for the example given in the demo."
 tools: ['codebase', 'fetch', 'findTestFiles', 'openSimpleBrowser', 'problems', 'search', 'searchResults']
 ---
 
-You are tasked with designing and implementing a new API endpoint to retrieve weather data based on a provided city and state. Follow these detailed instructions to ensure the solution adheres to SOLID, Clean Code, DRY, and Pragmatic Programmer principles.
+
+You are tasked with documenting an implementation plan for a new API endpoint to retrieve weather data based on a provided city and state. **Do not make any code changes at this stage.**
+
+In addition to the implementation plan, you must create a markdown file named `prd.md` with the requirements built out as user stories. This file will be used as context for agent mode. The `prd.md` should be clear, actionable, and suitable for sharing with the team.
+
+Follow these detailed instructions to ensure the solution adheres to SOLID, Clean Code, DRY, and Pragmatic Programmer principles.
+
 
 ## Step-by-Step Process
 
@@ -23,11 +29,13 @@ You are tasked with designing and implementing a new API endpoint to retrieve we
 - Use descriptive method and variable names.
 - Define input validation rules.
 
+
 ### 4. Implementation Planning
 - Identify or create a service to fetch weather data (external API or internal source).
 - Abstract external dependencies behind interfaces.
 - Ensure single responsibility for each class/module.
 - Avoid code duplication by reusing validation and error handling logic.
+- **Create a `prd.md` file in markdown format with the requirements written as user stories.**
 
 ### 5. Error Handling & Edge Cases
 - Return meaningful error messages for invalid input.
@@ -68,20 +76,14 @@ You are tasked with designing and implementing a new API endpoint to retrieve we
 
 ---
 
+
 **Deliverables:**
-- Endpoint implementation code.
-- Interface and service abstractions.
-- Unit and integration tests.
-- API documentation.
-- Deployment and monitoring updates.
+- Implementation plan (no code changes yet)
+- `prd.md` file with requirements as user stories
 
 **Checklist:**
 - [ ] Requirements clarified
 - [ ] API designed and documented
 - [ ] Interfaces and contracts defined
-- [ ] Implementation complete
-- [ ] Error handling robust
-- [ ] Tests written and passing
-- [ ] Code reviewed for SOLID, Clean Code, DRY, Pragmatic principles
-- [ ] Security and performance verified
-- [ ] Deployed and monitored
+- [ ] Implementation plan documented (no code changes)
+- [ ] `prd.md` file created with user stories
