@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptingForImpactDemo.Api", "PromptingForImpactDemo.Api\PromptingForImpactDemo.Api.csproj", "{2C5A3D22-97CC-4C42-9A9D-CAF735316F06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptingForImpactDemo.Api.Tests", "PromptingForImpactDemo.Api.Tests\PromptingForImpactDemo.Api.Tests.csproj", "{EECEFDE2-F47F-48B6-B4C9-50584C8B7CCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C5A3D22-97CC-4C42-9A9D-CAF735316F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5A3D22-97CC-4C42-9A9D-CAF735316F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5A3D22-97CC-4C42-9A9D-CAF735316F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5A3D22-97CC-4C42-9A9D-CAF735316F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECEFDE2-F47F-48B6-B4C9-50584C8B7CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECEFDE2-F47F-48B6-B4C9-50584C8B7CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECEFDE2-F47F-48B6-B4C9-50584C8B7CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECEFDE2-F47F-48B6-B4C9-50584C8B7CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
